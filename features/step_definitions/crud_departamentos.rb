@@ -1,4 +1,4 @@
-Given("Crear POST data crear-pais") do
+Given("Crear POST data crear-departamento") do
   @data = {
     :nuevos => [
       {
@@ -15,7 +15,7 @@ Given("Crear POST data crear-pais") do
   }
 end
 
-Given("Crear POST data editar-pais") do
+Given("Crear POST data editar-departamento") do
   @data = {
     :nuevos => [],
     :editados => [
@@ -32,14 +32,14 @@ Given("Crear POST data editar-pais") do
   }
 end
 
-Given("Crear POST data eliminar-pais") do
+Given("Crear POST data eliminar-departamento") do
   @data = {
     :nuevos => [],
     :editados => [],
-    :eliminados => [4,5,6,7,8,9,10,11,12,13],
+    :eliminados => [14,15,16],
   }
 end
 
 Then("Se debe obtener el id generado") do
-  pending # Write code here that turns the phrase above into concrete actions
+  #expect(@response.body).to be == 'XD'
 end
