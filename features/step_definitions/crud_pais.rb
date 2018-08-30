@@ -10,7 +10,23 @@ Given("Crear POST data crear-pais") do
         :nombre => 'Pais N2',
       },
     ],
+    :editados => [],
+    :eliminados => [],
+  }
+end
+
+Given("Crear POST data editar-pais") do
+  @data = {
+    :nuevos => [],
     :editados => [
+      {
+        :id => 2,
+        :nombre => 'Colombia',
+      },
+      {
+        :id => 3,
+        :nombre => 'Chile',
+      },
     ],
     :eliminados => [],
   }
