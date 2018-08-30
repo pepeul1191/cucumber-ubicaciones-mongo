@@ -32,6 +32,14 @@ Given("Crear POST data editar-pais") do
   }
 end
 
+Given("Crear POST data eliminar-pais") do
+  @data = {
+    :nuevos => [],
+    :editados => [],
+    :eliminados => [4,5,6,7,8,9,10,11,12,13],
+  }
+end
+
 Then("Se debe obtener el id generado") do
   pending # Write code here that turns the phrase above into concrete actions
 end
