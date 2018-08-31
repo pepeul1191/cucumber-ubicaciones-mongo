@@ -2,8 +2,8 @@ CONSTANTS = {
   :BASE_URL => 'http://localhost:3000/',
   :STATIC_URL => 'http://localhost:8080/',
   :CSRF => {
-    :value => 'mpt/sr6eS2AlCRHU7DVThMgFTN08pnfSDf/C94eZx7udfm0lvgaYWLYJttYPKzGKDTlXwVU/d2FOxbKkgNlsTw==',
-    :key => 'Csrf-Val',
+    :value => 'PKBcauXg6sTXz7Ddlty0nejVgoUodXL89KNxcrfwkEme0Huqtj6jjt4fP7v2uF4L',
+    :key => 'csrf_val',
   },
   :sistema_id => 4,
 }
