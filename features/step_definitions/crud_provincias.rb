@@ -16,6 +16,7 @@ Given("Crear POST data crear-provincias") do
       :departamento_id => 1
     }
   }
+  @nuevos = 2
 end
 
 Given("Crear POST data editar-provincias") do
@@ -32,6 +33,7 @@ Given("Crear POST data editar-provincias") do
       :departamento_id => 1
     }
   }
+  @nuevos = 0
 end
 
 Given("Crear POST data eliminar-provincias") do
@@ -43,4 +45,5 @@ Given("Crear POST data eliminar-provincias") do
       :departamento_id => 1
     }
   }
+  @nuevos = 0
 end

@@ -33,6 +33,7 @@ Given("Crear POST data editar-departamentos") do
       :pais_id => 2
     }
   }
+  @nuevos = 0
 end
 
 Given("Crear POST data eliminar-departamentos") do
@@ -44,4 +45,5 @@ Given("Crear POST data eliminar-departamentos") do
       :pais_id => 2
     }
   }
+  @nuevos = 0
 end
