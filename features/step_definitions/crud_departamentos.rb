@@ -16,6 +16,7 @@ Given("Crear POST data crear-departamentos") do
       :pais_id => 2
     }
   }
+  @nuevos = 2
 end
 
 Given("Crear POST data editar-departamentos") do
@@ -43,8 +44,4 @@ Given("Crear POST data eliminar-departamentos") do
       :pais_id => 2
     }
   }
-end
-
-Then("Se debe obtener el id generado") do
-  #expect(@response.body).to be == 'XD'
 end

@@ -19,6 +19,29 @@ When("Ejecutar petición HTTP") do
 end
 
 Then("Se debe obtener un status code success {int}") do |status_code|
-  puts @response.body
+  if SHOW_RESPONSE
+    puts @response.code
+    puts @response.body
+  end
   expect(@response.code).to be == status_code
+end
+
+Then("Se debe obtener el id generado") do
+  if @response.code != 200
+    fail('Error, se obtuvo un response code 404')
+  else
+    rpta = JSON.parse(@response.body)
+    nuevos = rpta['mensaje'][1].length
+    expect(nuevos).to be == @nuevos
+  end
+end
+
+Then("No se debe obtener el id generado") do
+  if @response.code != 200
+    fail('Error, se obtuvo un response code 404')
+  else
+    rpta = JSON.parse(@response.body)
+    nuevos = rpta['mensaje'][1].length
+    expect(nuevos).to be == 0
+  end
 end

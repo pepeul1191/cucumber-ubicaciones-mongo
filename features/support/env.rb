@@ -7,3 +7,5 @@ CONSTANTS = {
   },
   :sistema_id => 4,
 }
+
+SHOW_RESPONSE = true

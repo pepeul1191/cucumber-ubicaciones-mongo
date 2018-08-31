@@ -44,7 +44,3 @@ Given("Crear POST data eliminar-provincias") do
     }
   }
 end
-
-Then("Se debe obtener el id generado") do
-  #expect(@response.body).to be == 'XD'
-end
