@@ -1,4 +1,4 @@
-Given("Crear POST data crear-provincias") do
+Given("Crear POST data crear-provincia") do
   @data = {
     :nuevos => [
       {
@@ -19,7 +19,7 @@ Given("Crear POST data crear-provincias") do
   @nuevos = 2
 end
 
-Given("Crear POST data editar-provincias") do
+Given("Crear POST data editar-provincia") do
   @data = {
     :nuevos => [],
     :editados => [
@@ -36,7 +36,7 @@ Given("Crear POST data editar-provincias") do
   @nuevos = 0
 end
 
-Given("Crear POST data eliminar-provincias") do
+Given("Crear POST data eliminar-provincia") do
   @data = {
     :nuevos => [],
     :editados => [],
