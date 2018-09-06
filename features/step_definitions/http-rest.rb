@@ -26,13 +26,13 @@ Then("Se debe obtener un status code success {int}") do |status_code|
   expect(@response.code).to be == status_code
 end
 
-Then("Se debe obtener el id generado") do
+Then("Se debe obtener el id mongo generado") do
   if @response.code != 200
     fail('Error, se obtuvo un response code 404')
   else
     rpta = JSON.parse(@response.body)
-    nuevos = rpta['mensaje'][1].length
-    expect(nuevos).to be == @nuevos
+    mongo_id = rpta['mensaje'][1]
+    expect(mongo_id.length).to be == 24
   end
 end
 
