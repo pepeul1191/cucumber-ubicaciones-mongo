@@ -41,7 +41,7 @@ Then("No se debe obtener el id generado") do
     fail('Error, se obtuvo un response code 404')
   else
     rpta = JSON.parse(@response.body)
-    nuevos = rpta['mensaje'][1].length
-    expect(nuevos).to be == 0
+    nuevos = rpta['mensaje'].length
+    expect(nuevos).to be == 1
   end
 end
